@@ -110,18 +110,14 @@ Lakukan langkah berikut:
 
 1. Klik ikon gembok di samping alamat website
 
-2. Pilih:
+![Izin Kamera](docs/izin-kamera.png)
 
-```
-Permission / Izin Situs
-```
 
-3. Aktifkan:
+2. Pilih Permission / Izin Situs
 
-```
-Camera → Allow
-```
+3. Aktifkan Camera → Allow
 
+![Allow Kamera](docs/allow-camera.png)
 4. Refresh halaman
 
 5. Buka kembali menu Scan QR
