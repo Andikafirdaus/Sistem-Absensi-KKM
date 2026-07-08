@@ -2,82 +2,132 @@
 
 Sistem Absensi KKM adalah aplikasi berbasis website yang digunakan untuk membantu proses pencatatan kehadiran anggota KKM secara digital menggunakan teknologi QR Code.
 
-Dengan adanya sistem ini, proses absensi menjadi lebih cepat, mudah, dan data kehadiran dapat tersimpan secara otomatis.
+Dengan sistem ini, proses absensi anggota menjadi lebih mudah, cepat, dan data kehadiran tersimpan secara otomatis.
 
 ---
 
-# 👥 Role Pengguna
+# 👥 Jenis Akun Pengguna
 
-Sistem memiliki 2 jenis pengguna:
+Pada sistem ini terdapat 2 jenis akun:
 
-## 1. Administrator
+## 🔹 Administrator
 
-Administrator bertugas mengelola seluruh data sistem.
+Administrator bertugas untuk mengelola seluruh data sistem.
 
 Fitur Administrator:
 
-- Mengelola akun anggota KKM
-- Membuat akun anggota
-- Mengubah data anggota
-- Mengubah password anggota apabila lupa
-- Generate QR Code absensi
-- Melihat data absensi
-- Export laporan absensi Excel
+- Membuat akun anggota KKM
+- Mengelola data anggota
+- Mengubah password anggota
+- Membuat QR Code absensi
+- Melihat rekap absensi
+- Export laporan Excel
 - Monitoring aktivitas sistem
 
 
-## 2. Anggota KKM
+## 🔹 Anggota KKM
 
-Anggota digunakan untuk melakukan absensi harian.
+Akun anggota digunakan untuk melakukan absensi harian.
 
-Fitur Anggota:
+Fitur anggota:
 
 - Login akun
 - Scan QR Code absensi
 - Melihat riwayat absensi
-- Mengubah profil pribadi
+- Mengubah profil
 
 
 ---
 
 # 🔐 Cara Login Anggota KKM
 
-Setiap anggota akan mendapatkan akun yang dibuat oleh Administrator.
+Akun anggota dibuat terlebih dahulu oleh Administrator.
 
-Data login berupa:
+Setiap anggota akan mendapatkan:
 
 ```
-Email    : diberikan oleh Administrator
-Password : diberikan oleh Administrator
+Email
+Password
 ```
+
+yang sudah diberikan oleh pengurus KKM.
+
 
 Langkah login:
 
-1. Buka website Sistem Absensi KKM
+## 1. Buka Website Absensi KKM
 
-2. Masukkan email dan password yang sudah diberikan
+Masuk ke halaman login website.
 
-3. Klik tombol:
+
+<p align="center">
+  <img src="docs/login.jpg" width="280">
+</p>
+
+
+---
+
+## 2. Masukkan Akun
+
+Isi:
+
+```
+Email
+Password
+```
+
+sesuai akun yang diberikan Administrator.
+
+
+Kemudian klik:
 
 ```
 Login
 ```
 
-4. Setelah berhasil, anggota akan masuk ke halaman Dashboard.
+
+---
+
+## 3. Masuk Dashboard
+
+Jika berhasil login, anggota akan diarahkan ke halaman dashboard.
+
+
+<p align="center">
+  <img src="docs/dashboard.jpg" width="280">
+</p>
+
 
 ---
 
 # 📷 Cara Melakukan Absensi QR Code
 
-Setelah berhasil login:
 
-1. Pilih menu:
+## 1. Pilih Menu Scan QR Absen
+
+Pada halaman dashboard pilih:
 
 ```
 Scan QR Absen
 ```
 
-2. Browser akan meminta izin kamera.
+
+<p align="center">
+  <img src="docs/menu-scan.jpg" width="280">
+</p>
+
+
+---
+
+## 2. Izinkan Akses Kamera
+
+Ketika pertama kali membuka scanner, browser akan meminta izin kamera.
+
+Jika muncul notifikasi:
+
+```
+Izinkan website menggunakan kamera?
+```
 
 Pilih:
 
@@ -85,66 +135,106 @@ Pilih:
 Izinkan / Allow
 ```
 
-3. Kamera akan terbuka.
+atau pilih tombol pertama untuk memberikan akses kamera.
 
-4. Arahkan kamera HP ke QR Code yang diberikan oleh Administrator.
 
-5. Tunggu sampai proses scan berhasil.
+<p align="center">
+  <img src="docs/izin-kamera.jpg" width="280">
+</p>
 
-6. Jika berhasil, sistem akan otomatis menyimpan:
+
+---
+
+## 3. Scan QR Code
+
+Setelah kamera terbuka:
+
+- Arahkan kamera ke QR Code yang diberikan Administrator
+- Pastikan QR terlihat jelas
+- Tunggu sampai proses scan selesai
+
+
+<p align="center">
+  <img src="docs/scan-qr.jpg" width="280">
+</p>
+
+
+---
+
+## 4. Absensi Berhasil
+
+Jika berhasil, sistem otomatis menyimpan:
 
 - Nama anggota
 - Tanggal absensi
 - Jam absensi
 - Status kehadiran
 
+
 ---
 
-# ⚠️ Kamera Tidak Muncul?
+# ⚠️ Kamera Tidak Muncul
 
-Apabila kamera tidak muncul ketika melakukan scan:
+Apabila kamera tidak muncul:
 
 Lakukan langkah berikut:
 
-## Android / Chrome
 
-1. Klik ikon gembok di samping alamat website
-
-![Izin Kamera](docs/izin-kamera..jpg)
+## Android / Google Chrome
 
 
-2. Pilih Permission / Izin Situs
+1. Klik ikon gembok atau pengaturan di sebelah alamat website
 
-3. Aktifkan Camera → Allow
 
-![Allow Kamera](docs/allow-camera.png)
+<p align="center">
+  <img src="docs/izin-kamera..jpg" width="280">
+</p>
+
+
+2. Pilih:
+
+```
+Izin Situs / Permission
+```
+
+
+3. Ubah kamera menjadi:
+
+```
+Izinkan / Allow
+```
+
+
 4. Refresh halaman
 
-5. Buka kembali menu Scan QR
+5. Buka kembali Scan QR Absen
 
 
 ---
 
-# 📅 Riwayat Absensi
+# 📅 Melihat Riwayat Absensi
 
-Anggota dapat melihat data kehadiran melalui menu:
+Untuk melihat data kehadiran:
+
+Pilih menu:
 
 ```
 Riwayat Absensi
 ```
 
-Informasi yang tersedia:
+
+Data yang tampil:
 
 - Tanggal hadir
-- Jam absensi
-- Status absensi
+- Jam absen
+- Status kehadiran
 
 
 ---
 
 # 🔑 Lupa Password
 
-Sistem tidak menggunakan reset password melalui email.
+Reset password melalui email tidak digunakan.
 
 Apabila anggota lupa password:
 
@@ -154,54 +244,58 @@ Silakan hubungi:
 - Sekretaris KKM
 - Administrator Sistem
 
-Administrator akan membantu melakukan perubahan password akun.
+
+Administrator akan membantu mengganti password akun.
+
 
 ---
 
-# 📊 Status Kehadiran
-
-Keterangan status:
-
-🟢 Hadir
-
-Anggota melakukan absensi sesuai waktu yang ditentukan.
+# 📊 Keterangan Status Absensi
 
 
-🟡 Terlambat
+## 🟢 Hadir
+
+Anggota berhasil melakukan absensi sesuai waktu yang ditentukan.
+
+
+## 🟡 Terlambat
 
 Anggota melakukan absensi melewati batas waktu yang ditentukan.
 
 
 ---
 
-# 💻 Teknologi Yang Digunakan
+# 💻 Teknologi Sistem
 
-Aplikasi dibangun menggunakan:
+Sistem dibuat menggunakan:
 
 - Laravel Framework
+- PHP
 - MySQL Database
 - Bootstrap
 - JavaScript
 - QR Code Scanner
 - Laravel Excel
 
----
-
-# 📌 Tentang Sistem
-
-Sistem Absensi KKM dibuat untuk membantu kegiatan Kuliah Kerja Mahasiswa dalam melakukan digitalisasi proses absensi.
-
-Tujuan utama:
-
-- Mengurangi absensi manual
-- Mempermudah rekap data
-- Mempercepat proses kehadiran
-- Menyediakan laporan yang lebih rapi
 
 ---
 
-# Developer
+# 📌 Tentang Aplikasi
 
-Dikembangkan sebagai bagian dari kegiatan KKM untuk mendukung penggunaan teknologi informasi dalam kegiatan organisasi.
+Sistem Absensi KKM dibuat untuk membantu digitalisasi kegiatan Kuliah Kerja Mahasiswa.
+
+Tujuan sistem:
+
+- Mengurangi penggunaan absensi manual
+- Mempermudah pencatatan kehadiran
+- Mempercepat proses absensi
+- Membantu pembuatan laporan kegiatan
+
+
+---
+
+# 👨‍💻 Developer
+
+Dikembangkan untuk mendukung kegiatan KKM dengan pemanfaatan teknologi informasi.
 
 © 2026 Sistem Absensi KKM
