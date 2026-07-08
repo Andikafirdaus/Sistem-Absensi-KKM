@@ -110,7 +110,7 @@ Lakukan langkah berikut:
 
 1. Klik ikon gembok di samping alamat website
 
-![Izin Kamera](docs/izin-kamera.png)
+![Izin Kamera](docs/izin-kamera.jpg)
 
 
 2. Pilih Permission / Izin Situs
