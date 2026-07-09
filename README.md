@@ -6,12 +6,6 @@
 
 Sebelum melakukan absensi, pengguna harus login terlebih dahulu ke dalam sistem.
 
-# Link Aplikasi
-
-Silahkan akses aplikasi melalui link berikut:
-
-[Klik Untuk Membuka Sistem Absensi QR Code](https://absensi-kkm.infinityfreeapp.com)
-
 Langkah-langkah:
 
 1. Buka website Sistem Absensi QR Code.
@@ -80,3 +74,9 @@ Informasi yang tersedia:
 - Pastikan koneksi internet aktif saat melakukan absensi.
 - Berikan izin akses kamera agar proses scan QR Code dapat digunakan.
 - Absensi hanya dapat dilakukan sesuai aturan yang sudah ditentukan oleh sistem.
+
+# Link Aplikasi
+
+Silahkan akses aplikasi melalui link berikut:
+
+[Klik Untuk Membuka Sistem Absensi QR Code](https://absensi-kkm.infinityfreeapp.com)
