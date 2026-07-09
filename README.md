@@ -1,301 +1,209 @@
-# 📌 Sistem Absensi KKM Berbasis QR Code
+# Sistem Absensi Berbasis QR Code
 
-Sistem Absensi KKM adalah aplikasi berbasis website yang digunakan untuk membantu proses pencatatan kehadiran anggota KKM secara digital menggunakan teknologi QR Code.
+## Tentang Project
 
-Dengan sistem ini, proses absensi anggota menjadi lebih mudah, cepat, dan data kehadiran tersimpan secara otomatis.
+Sistem Absensi Berbasis QR Code adalah aplikasi berbasis website yang dibuat menggunakan Laravel untuk membantu proses pencatatan kehadiran secara digital.
+
+Sistem ini menggantikan proses absensi manual dengan metode scan QR Code sehingga proses pencatatan kehadiran menjadi lebih cepat, praktis, dan data tersimpan secara otomatis di dalam database.
+
+Aplikasi ini memiliki dua jenis pengguna yaitu Admin dan User dengan hak akses yang berbeda.
+
 
 ---
 
-# 👥 Jenis Akun Pengguna
+## Fitur Aplikasi
 
-Pada sistem ini terdapat 2 jenis akun:
+### Admin
 
-## 🔹 Administrator
-
-Administrator bertugas untuk mengelola seluruh data sistem.
-
-Fitur Administrator:
-
-- Membuat akun anggota KKM
-- Mengelola data anggota
-- Mengubah password anggota
+- Login ke sistem
+- Melihat dashboard absensi
+- Mengelola data pengguna
 - Membuat QR Code absensi
-- Melihat rekap absensi
-- Export laporan Excel
-- Monitoring aktivitas sistem
+- Mengelola data kehadiran
+- Melihat riwayat absensi pengguna
+- Export laporan absensi ke Excel
 
 
-## 🔹 Anggota KKM
-
-Akun anggota digunakan untuk melakukan absensi harian.
-
-Fitur anggota:
+### User
 
 - Login akun
-- Scan QR Code absensi
-- Melihat riwayat absensi
-- Mengubah profil
+- Melakukan absensi dengan scan QR Code
+- Melihat status absensi
+- Melihat riwayat kehadiran
 
 
 ---
 
-# 🔐 Cara Login Anggota KKM
-
-Akun anggota dibuat terlebih dahulu oleh Administrator.
-
-Setiap anggota akan mendapatkan:
-
-```
-Email
-Password
-```
-
-yang sudah diberikan oleh pengurus KKM.
-
-
-Langkah login:
-
-## 1. Buka Website Absensi KKM
-
-Masuk ke halaman login website.
-
-
-<p align="center">
-  <img src="docs/login.jpg" width="280">
-</p>
-
-
----
-
-## 2. Masukkan Akun
-
-Isi:
-
-```
-Email
-Password
-```
-
-sesuai akun yang diberikan Administrator.
-
-
-Kemudian klik:
-
-```
-Login
-```
-
-
----
-
-## 3. Masuk Dashboard
-
-Jika berhasil login, anggota akan diarahkan ke halaman dashboard.
-
-
-<p align="center">
-  <img src="docs/dashboard.jpg" width="280">
-</p>
-
-
----
-
-# 📷 Cara Melakukan Absensi QR Code
-
-
-## 1. Pilih Menu Scan QR Absen
-
-Pada halaman dashboard pilih:
-
-```
-Scan QR Absen
-```
-
-
-<p align="center">
-  <img src="docs/menu-scan.jpg" width="280">
-</p>
-
-
----
-
-## 2. Izinkan Akses Kamera
-
-Ketika pertama kali membuka scanner, browser akan meminta izin kamera.
-
-Jika muncul notifikasi:
-
-```
-Izinkan website menggunakan kamera?
-```
-
-Pilih:
-
-```
-Izinkan / Allow
-```
-
-atau pilih tombol pertama untuk memberikan akses kamera.
-
-
-<p align="center">
-  <img src="docs/izin-kamera.jpg" width="280">
-</p>
-
-
----
-
-## 3. Scan QR Code
-
-Setelah kamera terbuka:
-
-- Arahkan kamera ke QR Code yang diberikan Administrator
-- Pastikan QR terlihat jelas
-- Tunggu sampai proses scan selesai
-
-
-<p align="center">
-  <img src="docs/scan-qr.jpg" width="280">
-</p>
-
-
----
-
-## 4. Absensi Berhasil
-
-Jika berhasil, sistem otomatis menyimpan:
-
-- Nama anggota
-- Tanggal absensi
-- Jam absensi
-- Status kehadiran
-
-
----
-
-# ⚠️ Kamera Tidak Muncul
-
-Apabila kamera tidak muncul:
-
-Lakukan langkah berikut:
-
-
-## Android / Google Chrome
-
-
-1. Klik ikon gembok atau pengaturan di sebelah alamat website
-
-
-<p align="center">
-  <img src="docs/izin-kamera..jpg" width="280">
-</p>
-
-
-2. Pilih:
-
-```
-Izin Situs / Permission
-```
-
-
-3. Ubah kamera menjadi:
-
-```
-Izinkan / Allow
-```
-
-
-4. Refresh halaman
-
-5. Buka kembali Scan QR Absen
-
-
----
-
-# 📅 Melihat Riwayat Absensi
-
-Untuk melihat data kehadiran:
-
-Pilih menu:
-
-```
-Riwayat Absensi
-```
-
-
-Data yang tampil:
-
-- Tanggal hadir
-- Jam absen
-- Status kehadiran
-
-
----
-
-# 🔑 Lupa Password
-
-Reset password melalui email tidak digunakan.
-
-Apabila anggota lupa password:
-
-Silakan hubungi:
-
-- Ketua KKM
-- Sekretaris KKM
-- Administrator Sistem
-
-
-Administrator akan membantu mengganti password akun.
-
-
----
-
-# 📊 Keterangan Status Absensi
-
-
-## 🟢 Hadir
-
-Anggota berhasil melakukan absensi sesuai waktu yang ditentukan.
-
-
-## 🟡 Terlambat
-
-Anggota melakukan absensi melewati batas waktu yang ditentukan.
-
-
----
-
-# 💻 Teknologi Sistem
-
-Sistem dibuat menggunakan:
+## Teknologi Yang Digunakan
 
 - Laravel Framework
 - PHP
 - MySQL Database
+- Blade Template Engine
 - Bootstrap
-- JavaScript
-- QR Code Scanner
+- SB Admin 2
+- QR Code Generator
 - Laravel Excel
 
 
 ---
 
-# 📌 Tentang Aplikasi
+## Struktur Database
 
-Sistem Absensi KKM dibuat untuk membantu digitalisasi kegiatan Kuliah Kerja Mahasiswa.
+### Users
 
-Tujuan sistem:
+Menyimpan data akun pengguna.
 
-- Mengurangi penggunaan absensi manual
-- Mempermudah pencatatan kehadiran
-- Mempercepat proses absensi
-- Membantu pembuatan laporan kegiatan
+Field utama:
+
+- id
+- name
+- email
+- password
+- role
+
+
+### Attendances
+
+Menyimpan data kehadiran pengguna.
+
+Field utama:
+
+- id
+- user_id
+- date
+- time_in
+- status
+
+
+### QR Tokens
+
+Menyimpan token QR Code yang digunakan untuk proses absensi.
+
+Field utama:
+
+- id
+- token
+- expires_at
 
 
 ---
 
-# 👨‍💻 Developer
+## Instalasi Project
 
-Dikembangkan untuk mendukung kegiatan KKM dengan pemanfaatan teknologi informasi.
+Clone repository:
 
-© 2026 Sistem Absensi KKM
+```bash
+git clone https://github.com/username/nama-project.git
+```
+
+Masuk folder project:
+
+```bash
+cd nama-project
+```
+
+
+Install dependency Laravel:
+
+```bash
+composer install
+```
+
+
+Copy file environment:
+
+```bash
+cp .env.example .env
+```
+
+
+Generate application key:
+
+```bash
+php artisan key:generate
+```
+
+
+Setting database pada file `.env`:
+
+```env
+DB_DATABASE=nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+
+Jalankan migrasi database:
+
+```bash
+php artisan migrate
+```
+
+
+Jalankan aplikasi:
+
+```bash
+php artisan serve
+```
+
+
+Akses aplikasi:
+
+```text
+http://127.0.0.1:8000
+```
+
+
+---
+
+## Role Pengguna
+
+### Admin
+
+Admin memiliki akses untuk mengelola sistem, pengguna, QR Code, dan laporan absensi.
+
+
+### User
+
+User memiliki akses untuk melakukan absensi dan melihat riwayat kehadiran.
+
+
+---
+
+## Export Data
+
+Sistem mendukung export laporan absensi ke format Excel (.xlsx) sehingga data dapat digunakan sebagai laporan administrasi.
+
+
+---
+
+## Status Pengembangan
+
+Fitur yang sudah tersedia:
+
+- Authentication System
+- Role Management
+- Dynamic QR Code Attendance
+- Attendance History
+- Admin Dashboard
+- Export Excel Report
+- Database Management
+
+
+---
+
+## Developer
+
+Project dibuat oleh:
+
+Nama Developer
+
+Program Studi Sistem Informasi
+
+
+---
+
+## Lisensi
+
+Project ini dibuat untuk kebutuhan pembelajaran dan pengembangan sistem informasi berbasis website.
