@@ -1,4 +1,4 @@
----
+
 
 # Panduan Penggunaan Aplikasi Absensi QR Code
 
@@ -15,7 +15,6 @@ Langkah-langkah:
 5. Jika data akun benar, pengguna akan diarahkan ke halaman utama aplikasi.
 
 
----
 
 ## 2. Melakukan Scan QR Code Absensi
 
