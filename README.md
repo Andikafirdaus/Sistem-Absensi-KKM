@@ -10,7 +10,7 @@ Langkah-langkah:
 
 1. Buka website Sistem Absensi QR Code.
 2. Masukkan email pribadi masing-masing pengguna yang sudah terdaftar.
-3. Masukkan password akun yang telah diberikan oleh Administrator.
+3. Masukkan password yang Padasuka46
 4. Klik tombol Login.
 5. Jika data akun benar, pengguna akan diarahkan ke halaman utama aplikasi.
 
