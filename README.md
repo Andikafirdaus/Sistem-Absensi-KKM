@@ -6,10 +6,15 @@
 
 Sebelum melakukan absensi, pengguna harus login terlebih dahulu ke dalam sistem.
 
+# Link Aplikasi
+
+Silahkan akses aplikasi melalui link berikut:
+
+[Klik Untuk Membuka Sistem Absensi QR Code](https://absensi-kkm.infinityfreeapp.com)
+
 Langkah-langkah:
 
 1. Buka website Sistem Absensi QR Code.
-https://absensi-kkm.infinityfreeapp.com
 2. Masukkan email pribadi masing-masing pengguna yang sudah terdaftar.
 3. Masukkan password akun yang telah diberikan oleh Administrator.
 4. Klik tombol Login.
