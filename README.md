@@ -1,209 +1,76 @@
-# Sistem Absensi Berbasis QR Code
+---
 
-## Tentang Project
+# Panduan Penggunaan Aplikasi Absensi QR Code
 
-Sistem Absensi Berbasis QR Code adalah aplikasi berbasis website yang dibuat menggunakan Laravel untuk membantu proses pencatatan kehadiran secara digital.
+## 1. Login Ke Aplikasi
 
-Sistem ini menggantikan proses absensi manual dengan metode scan QR Code sehingga proses pencatatan kehadiran menjadi lebih cepat, praktis, dan data tersimpan secara otomatis di dalam database.
+Sebelum melakukan absensi, pengguna harus login terlebih dahulu ke dalam sistem.
 
-Aplikasi ini memiliki dua jenis pengguna yaitu Admin dan User dengan hak akses yang berbeda.
+Langkah-langkah:
+
+1. Buka website Sistem Absensi QR Code.
+2. Masukkan email pribadi masing-masing pengguna yang sudah terdaftar.
+3. Masukkan password akun yang telah diberikan oleh Administrator.
+4. Klik tombol Login.
+5. Jika data akun benar, pengguna akan diarahkan ke halaman utama aplikasi.
 
 
 ---
 
-## Fitur Aplikasi
+## 2. Melakukan Scan QR Code Absensi
 
-### Admin
+Setelah berhasil login, pengguna dapat melakukan absensi menggunakan QR Code.
 
-- Login ke sistem
-- Melihat dashboard absensi
-- Mengelola data pengguna
-- Membuat QR Code absensi
-- Mengelola data kehadiran
-- Melihat riwayat absensi pengguna
-- Export laporan absensi ke Excel
+Langkah-langkah:
 
-
-### User
-
-- Login akun
-- Melakukan absensi dengan scan QR Code
-- Melihat status absensi
-- Melihat riwayat kehadiran
+1. Pilih menu Scan QR Code pada aplikasi.
+2. Arahkan kamera perangkat ke QR Code absensi yang tersedia.
+3. Pastikan QR Code terlihat jelas oleh kamera.
+4. Tunggu sampai sistem berhasil membaca QR Code.
+5. Jika berhasil, data kehadiran akan otomatis tersimpan.
 
 
 ---
 
-## Teknologi Yang Digunakan
+## 3. Mengizinkan Akses Kamera
 
-- Laravel Framework
-- PHP
-- MySQL Database
-- Blade Template Engine
-- Bootstrap
-- SB Admin 2
-- QR Code Generator
-- Laravel Excel
+Saat pertama kali menggunakan fitur Scan QR Code, browser akan meminta izin akses kamera.
 
+Jika muncul pesan:
 
----
+"Aplikasi ingin menggunakan kamera Anda"
 
-## Struktur Database
+Pilih:
 
-### Users
+"Izinkan saat mengunjungi situs"
 
-Menyimpan data akun pengguna.
+atau
 
-Field utama:
+"Izinkan"
 
-- id
-- name
-- email
-- password
-- role
-
-
-### Attendances
-
-Menyimpan data kehadiran pengguna.
-
-Field utama:
-
-- id
-- user_id
-- date
-- time_in
-- status
-
-
-### QR Tokens
-
-Menyimpan token QR Code yang digunakan untuk proses absensi.
-
-Field utama:
-
-- id
-- token
-- expires_at
+Pastikan memberikan izin akses kamera agar fitur scan QR Code dapat berjalan dengan baik.
 
 
 ---
 
-## Instalasi Project
+## 4. Melihat Riwayat Absensi
 
-Clone repository:
+Pengguna dapat melihat data kehadiran yang sudah dilakukan melalui menu riwayat absensi.
 
-```bash
-git clone https://github.com/username/nama-project.git
-```
+Informasi yang tersedia:
 
-Masuk folder project:
-
-```bash
-cd nama-project
-```
-
-
-Install dependency Laravel:
-
-```bash
-composer install
-```
-
-
-Copy file environment:
-
-```bash
-cp .env.example .env
-```
-
-
-Generate application key:
-
-```bash
-php artisan key:generate
-```
-
-
-Setting database pada file `.env`:
-
-```env
-DB_DATABASE=nama_database
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
-
-Jalankan migrasi database:
-
-```bash
-php artisan migrate
-```
-
-
-Jalankan aplikasi:
-
-```bash
-php artisan serve
-```
-
-
-Akses aplikasi:
-
-```text
-http://127.0.0.1:8000
-```
+- Tanggal absensi
+- Waktu melakukan absensi
+- Status kehadiran
 
 
 ---
 
-## Role Pengguna
+## Catatan Penggunaan
 
-### Admin
-
-Admin memiliki akses untuk mengelola sistem, pengguna, QR Code, dan laporan absensi.
-
-
-### User
-
-User memiliki akses untuk melakukan absensi dan melihat riwayat kehadiran.
-
-
----
-
-## Export Data
-
-Sistem mendukung export laporan absensi ke format Excel (.xlsx) sehingga data dapat digunakan sebagai laporan administrasi.
-
-
----
-
-## Status Pengembangan
-
-Fitur yang sudah tersedia:
-
-- Authentication System
-- Role Management
-- Dynamic QR Code Attendance
-- Attendance History
-- Admin Dashboard
-- Export Excel Report
-- Database Management
-
-
----
-
-## Developer
-
-Project dibuat oleh:
-
-Nama Developer
-
-Program Studi Sistem Informasi
-
-
----
-
-## Lisensi
-
-Project ini dibuat untuk kebutuhan pembelajaran dan pengembangan sistem informasi berbasis website.
+- Gunakan email pribadi masing-masing untuk login.
+- Password akun diberikan oleh Administrator.
+- Jangan membagikan akun kepada pengguna lain.
+- Pastikan koneksi internet aktif saat melakukan absensi.
+- Berikan izin akses kamera agar proses scan QR Code dapat digunakan.
+- Absensi hanya dapat dilakukan sesuai aturan yang sudah ditentukan oleh sistem.
